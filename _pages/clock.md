@@ -16,6 +16,6 @@ redirect_from:
 		<br>
 		<br>
 		<br>
-		<img src="woosh2.jpg" alt="woosh">
+		<img src="images/woosh2.jpg" alt="woosh">
 	</center>
 </div>
