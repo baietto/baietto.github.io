@@ -1,6 +1,9 @@
 ---
 permalink: /clock/
 title: "Clock"
+redirect_from: 
+  - /clock/
+  - /clock.html
 ---
 
 <html>
