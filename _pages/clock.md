@@ -6,6 +6,8 @@ redirect_from:
   - /clock.html
 ---
 
+## This is a test
+
 <html>
 	<head>
 		<meta charset="utf-8">
