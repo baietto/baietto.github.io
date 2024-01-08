@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+---
+permalink: /clock/
+title: "Clock"
+---
+
 <html>
 	<head>
 		<meta charset="utf-8">
