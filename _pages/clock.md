@@ -8,27 +8,14 @@ redirect_from:
 
 ## This is a test
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<title>Clock</title>
-	</head>
-	
-	<body id="page-top" class="index">
-		<section id="intro">
-			<div>
-				<br>
-				<br>
-				<center>
-					<iframe src="https://free.timeanddate.com/clock/i21lw7nm/n179/fs48/ftb" frameborder="0" width="285" height="60"></iframe>
-					<br>
-					<br>
-					<br>
-					<img src="woosh2.jpg" alt="woosh">
-				</center>
-			</div>
-		</section>
-	</body>
-</html>
+<div>
+	<br>
+	<br>
+	<center>
+		<iframe src="https://free.timeanddate.com/clock/i21lw7nm/n179/fs48/ftb" frameborder="0" width="285" height="60"></iframe>
+		<br>
+		<br>
+		<br>
+		<img src="woosh2.jpg" alt="woosh">
+	</center>
+</div>
