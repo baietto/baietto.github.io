@@ -8,4 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-Hello World!
+Anthony Baietto is a PhD Candidate in Computer Science and Engineering at [The Ohio State University](https://cse.osu.edu). His research interests center around computer systems, artificial intelligence, machine learning, and neural networks. His research explores novel neural network design approaches which leverage extant problem information to reduce the evergrowing sizes of models and datasets.
