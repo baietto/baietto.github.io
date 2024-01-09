@@ -47,6 +47,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
+  show                   : false
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
