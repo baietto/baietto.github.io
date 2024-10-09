@@ -10,5 +10,5 @@ redirect_from:
 {% include base_path %}
 
 <div>
-	<embed src="{{ "Anthony_Baietto_resume.pdf" | prepend: "/files/" | prepend: base_path }}" type="application/pdf" sidth="500" height="375">
+	<embed src="{{ "AnthonyBaietto_resume.pdf" | prepend: "/files/" | prepend: base_path }}" type="application/pdf" sidth="500" height="375">
 </div>
