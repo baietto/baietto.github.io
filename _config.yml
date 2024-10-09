@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Anthony Baietto"
 title_separator          : "-"
 name                     : &name "Anthony Baietto"
-description              : &description "Anthony Baietto's Personal Website"
+description              : &description "Anthony Baietto's Website"
 url                      : https://anthony.baietto.dev # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "baietto/baietto.github.io"
@@ -88,8 +88,8 @@ author:
   location         : "Columbus, OH"
   employer         : "Office: Dreese Labs 778"
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=kR6KK3IAAAAJ&hl=en"
-  email            : "baietto.2@osu.edu"
+  googlescholar    : "https://scholar.google.com/citations?user=ykQ5-1AAAAAJ"
+  email            : "anthony@baietto.dev"
   researchgate     :  "https://www.researchgate.net/scientific-contributions/Anthony-Baietto-2214440605"
   uri              :
   bitbucket        :
@@ -104,7 +104,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/anthony-baietto-a03ba114b"
   orcid            : "https://orcid.org/0000-0002-8769-4548"
   pinterest        :
   soundcloud       :
