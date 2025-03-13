@@ -52,24 +52,50 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
+		
+		{% if post.citation or post.patentnumber or post.patentapplicationnumber %}
+	      <p style="font-size: smaller">
+	  
+	      {% if post.citation %}
+	        Recommended citation: {{ post.citation }}
+	      {% elsif post.patentnumber %}
+	        Patent No.: {{ post.patentnumber }}
+	      {% elsif post.patentapplicationnumber %}
+	        Patent Application No.: {{ post.patentapplicationnumber }}
+	      {% endif %}
+	  
+	      {% if post.paperurl or post.paperlink or post.slidesurl or post.slidesurl or post.patenturl or post.patentlink %}
+		    <br />
+	    
+		    {% if post.category == 'patents' %}
+	          {% if post.patentlink %}
+	            <a href="{{ post.patentlink | prepend: \"/files/\" | prepend: base_path }}">Download Patent</a>
+	          {% elsif post.patenturl %}
+	            <a href="{{ post.patenturl }}">Download Patent</a>
+	          {% endif %}
+	        {% else %}
+	          {% if post.paperlink %}
+	            <a href="{{ post.paperlink | prepend: \"/files/\" | prepend: base_path }}">Download Paper</a>
+	          {% elsif post.paperurl %}
+	            <a href="{{ post.paperurl }}">Download Paper</a>
+	          {% endif %}
+	  
+	          {% if post.paperlink or post.paperurl %}
+	             | 
+	          {% endif %}
+	  
+	          {% if post.slideslink %}
+	            <a href="{{ post.slideslink | prepend: \"/files/\" | prepend: base_path }}">Download Slides</a>
+	          {% elsif post.slidesurl %}
+	            <a href="{{ post.slidesurl }}">Download Slides</a>
+	          {% endif %}
+	        {% endif %}
+	      {% endif %}
+	  
+	      </p>
+	    {% endif %}
 
-        {% if page.citation and page.paperurl and page.slidesurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.citation and page.paperurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
-        {% elsif page.citation and page.slidesurl %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.citation %}
-          <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
-        {% elsif page.slidesurl %}
-          <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif page.patentnumber and page.patenturl %}
-          <p style="font-size: smaller">Patent No.: {{ page.patentnumber }}<br /><a href="{{ page.patenturl }}">Download Patent</a></p>
-        {% elsif page.patentnumber %}
-          <p style="font-size: smaller">Patent No.: {{ page.patentnumber }}</p>
-        {% elsif page.patentapplicationnumber %}
-          <p style="font-size: smaller">Patent Application No.: {{ page.patentapplicationnumber }}
-        {% endif %}
+        
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>

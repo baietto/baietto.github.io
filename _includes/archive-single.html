@@ -59,26 +59,48 @@
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
-    
-    {% if post.citation and post.paperurl and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
-    {% elsif post.citation and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
-    {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
-    {% elsif post.slidesurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.patentnumber and post.patenturl %}
-      <p>Patent No.: {{ post.patentnumber }}<br /><a href="{{ post.patenturl }}">Download Patent</a></p>
-    {% elsif post.patentnumber %}
-      <p>Patent No.: {{ post.patentnumber }}</p>
-    {% elsif post.patentapplicationnumber %}
-      <p>Patent Application No.: {{ post.patentapplicationnumber }}
-    {% endif %}
+	
+	{% if post.citation or post.patentnumber or post.patentapplicationnumber %}
+	  <p>
+	  
+	  {% if post.citation %}
+	    Recommended citation: {{ post.citation }}
+	  {% elsif post.patentnumber %}
+	    Patent No.: {{ post.patentnumber }}
+	  {% elsif post.patentapplicationnumber %}
+	    Patent Application No.: {{ post.patentapplicationnumber }}
+	  {% endif %}
+	  
+	  {% if post.paperurl or post.paperlink or post.slidesurl or post.slidesurl or post.patenturl or post.patentlink %}
+		<br />
+	    
+		{% if post.category == 'patents' %}
+	      {% if post.patentlink %}
+	        <a href="{{ post.patentlink | prepend: \"/files/\" | prepend: base_path }}">Download Patent</a>
+	      {% elsif post.patenturl %}
+	        <a href="{{ post.patenturl }}">Download Patent</a>
+	      {% endif %}
+	    {% else %}
+	      {% if post.paperlink %}
+	        <a href="{{ post.paperlink | prepend: \"/files/\" | prepend: base_path }}">Download Paper</a>
+	      {% elsif post.paperurl %}
+	        <a href="{{ post.paperurl }}">Download Paper</a>
+	      {% endif %}
+	  
+	      {% if post.paperlink or post.paperurl %}
+	         | 
+	      {% endif %}
+	  
+	      {% if post.slideslink %}
+	        <a href="{{ post.slideslink | prepend: \"/files/\" | prepend: base_path }}">Download Slides</a>
+	      {% elsif post.slidesurl %}
+	        <a href="{{ post.slidesurl }}">Download Slides</a>
+	      {% endif %}
+	    {% endif %}
+	  {% endif %}
+	  
+	  </p>
+	{% endif %}
 
   </article>
 </div>
