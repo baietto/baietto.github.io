@@ -36,11 +36,11 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.category == 'patents' %}
-		  {% if post.patentnumber %}
-			<p>Published {{ post.date | default: "1900-01-01" | date: "%b. %d, %Y" }} </p>
-	      {% elsif post.patentapplicationnumber %}
-			<p>Filed {{ post.date | default: "1900-01-01" | date: "%b. %d, %Y" }}. Patent pending. </p>
+        {% elsif page.category == 'patents' %}
+		  {% if page.patentnumber %}
+			<p>Published {{ page.date | default: "1900-01-01" | date: "%b. %d, %Y" }} </p>
+	      {% elsif page.patentapplicationnumber %}
+			<p>Filed {{ page.date | default: "1900-01-01" | date: "%b. %d, %Y" }}. Patent pending. </p>
 		  {% endif %}
 		{% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
@@ -63,12 +63,12 @@ layout: default
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
         {% elsif page.slidesurl %}
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
-        {% elsif post.patentnumber and post.patenturl %}
-          <p style="font-size: smaller">Patent No.: {{ post.patentnumber }}<br /><a href="{{ post.patenturl }}">Download Patent</a></p>
-        {% elsif post.patentnumber %}
-          <p style="font-size: smaller">Patent No.: {{ post.patentnumber }}</p>
-        {% elsif post.patentapplicationnumber %}
-          <p style="font-size: smaller">Patent Application No.: {{ post.patentapplicationnumber }}
+        {% elsif page.patentnumber and page.patenturl %}
+          <p style="font-size: smaller">Patent No.: {{ page.patentnumber }}<br /><a href="{{ page.patenturl }}">Download Patent</a></p>
+        {% elsif page.patentnumber %}
+          <p style="font-size: smaller">Patent No.: {{ page.patentnumber }}</p>
+        {% elsif page.patentapplicationnumber %}
+          <p style="font-size: smaller">Patent Application No.: {{ page.patentapplicationnumber }}
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
