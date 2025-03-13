@@ -41,7 +41,15 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+		  {% if post.category == 'patents' %}
+		    {% if post.patentnumber %}
+			  <p>Published {{ post.date | default: "1900-01-01" | date: "%b. %d, %Y" }} </p>
+			{% elsif post.patentapplicationnumber %}
+			  <p>Filed {{ post.date | default: "1900-01-01" | date: "%b. %d, %Y" }}. Patent pending. </p>
+			{% endif %}
+		  {% else %}
+            <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+		  {% endif %}
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
@@ -64,6 +72,12 @@
       <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
     {% elsif post.slidesurl %}
       <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
+    {% elsif post.patentnumber and post.patenturl %}
+      <p>Patent No.: {{ post.patentnumber }}<br /><a href="{{ post.patenturl }}">Download Patent</a></p>
+    {% elsif post.patentnumber %}
+      <p>Patent No.: {{ post.patentnumber }}</p>
+    {% elsif post.patentapplicationnumber %}
+      <p>Patent Application No.: {{ post.patentapplicationnumber }}
     {% endif %}
 
   </article>
