@@ -7,7 +7,7 @@ excerpt: ''
 date: 2023-09-28
 venue: 'IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion'
 slidesurl: 
-slideslink: 
+slideslink: '2023-09-28-Dataset-Augmentation-for-Robust-Spiking-Neural-Networks.pdf'
 paperurl: 'https://www.computer.org/csdl/proceedings-article/acsos-c/2023/374600a116/1SN6yV2yKR2'
 paperlink: 
 citation: 'A. Baietto, C. Stewart and T. J. Bihl, &quot;Dataset Augmentation for Robust Spiking Neural Networks,&quot; in <i>2023 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C)</i>, Toronto, ON, Canada, 2023, pp. 116-121, doi: 10.1109/ACSOS-C58168.2023.00050.'
