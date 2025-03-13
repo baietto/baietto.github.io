@@ -11,4 +11,4 @@ publication:
 
 {% include base_path %}
 
-[Download Poster]({{ "2023-12-05-Data-Aware-Tuning-of-Deep-Learning-Models.pdf" | prepend: "/files/" | prepend: base_path }})
+[Download Slides]({{ "2023-12-05-Data-Aware-Tuning-of-Deep-Learning-Models.pdf" | prepend: "/files/" | prepend: base_path }})
