@@ -76,13 +76,13 @@
 	    
 		{% if post.category == 'patents' %}
 	      {% if post.patentlink %}
-	        <a href="{{ post.patentlink | prepend: \"/files/\" | prepend: base_path }}">Download Patent</a>
+	        <a href="{{ post.patentlink | prepend: "/files/" | prepend: base_path }}">Download Patent</a>
 	      {% elsif post.patenturl %}
 	        <a href="{{ post.patenturl }}">Download Patent</a>
 	      {% endif %}
 	    {% else %}
 	      {% if post.paperlink %}
-	        <a href="{{ post.paperlink | prepend: \"/files/\" | prepend: base_path }}">Download Paper</a>
+	        <a href="{{ post.paperlink | prepend: "/files/" | prepend: base_path }}">Download Paper</a>
 	      {% elsif post.paperurl %}
 	        <a href="{{ post.paperurl }}">Download Paper</a>
 	      {% endif %}
@@ -92,7 +92,7 @@
 	      {% endif %}
 	  
 	      {% if post.slideslink %}
-	        <a href="{{ post.slideslink | prepend: \"/files/\" | prepend: base_path }}">Download Slides</a>
+	        <a href="{{ post.slideslink | prepend: "/files/" | prepend: base_path }}">Download Slides</a>
 	      {% elsif post.slidesurl %}
 	        <a href="{{ post.slidesurl }}">Download Slides</a>
 	      {% endif %}
