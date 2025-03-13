@@ -7,7 +7,7 @@ excerpt: ''
 date: 2022-06-03
 venue: 'IEEE 31st International Symposium on Industrial Electronics'
 slidesurl: 
-slieslink: '2022-06-03-Lean-Neural-Networks-for-Real-time-Embedded-Spectral-Notching-Waveform-Design.pdf'
+slideslink: '2022-06-03-Lean-Neural-Networks-for-Real-time-Embedded-Spectral-Notching-Waveform-Design.pdf'
 paperurl: 'https://ieeexplore.ieee.org/document/9831772'
 paperlink: 
 citation: 'A. Baietto, J. Boubin, P. Farr and T. J. Bihl, &quot;Lean Neural Networks for Real-time Embedded Spectral Notching Waveform Design,&quot; <i>2022 IEEE 31st International Symposium on Industrial Electronics (ISIE)</i>, Anchorage, AK, USA, 2022, pp. 1121-1126, doi: 10.1109/ISIE51582.2022.9831772.'
