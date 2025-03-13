@@ -80,9 +80,11 @@ layout: default
 	            <a href="{{ page.paperurl }}">Download Paper</a>
 	          {% endif %}
 	  
-	          {% if (page.paperlink or page.paperurl) and (page.slideslink or page.slidesurl) %}
-	             | 
-	          {% endif %}
+	          {% if page.paperlink or page.paperurl %}
+    		    {% if page.slideslink or page.slidesurl %}
+	               | 
+	            {% endif %}
+			  {% endif %}
 	  
 	          {% if page.slideslink %}
 	            <a href="{{ page.slideslink | prepend: "/files/" | prepend: base_path }}">Download Slides</a>

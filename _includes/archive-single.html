@@ -87,9 +87,11 @@
 	        <a href="{{ post.paperurl }}">Download Paper</a>
 	      {% endif %}
 	  
-	      {% if (post.paperlink or post.paperurl) and (post.slideslink or post.slidesurl) %}
-	         | 
-	      {% endif %}
+	      {% if post.paperlink or post.paperurl %}
+		    {% if post.slideslink or post.slidesurl %}
+	           | 
+	        {% endif %}
+		  {% endif %}
 	  
 	      {% if post.slideslink %}
 	        <a href="{{ post.slideslink | prepend: "/files/" | prepend: base_path }}">Download Slides</a>
