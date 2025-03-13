@@ -3,7 +3,7 @@ title: "Lean Neural Networks for Real-time Embedded Spectral Notching Waveform D
 collection: publications
 category: conferences
 permalink: /publication/2022-07-25-Lean-Neural-Networks-for-Real-time-Embedded-Spectral-Notching-Waveform-Design
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
+excerpt: 
 date: 2022-07-25
 venue: 'IEEE 31st International Symposium on Industrial Electronics'
 slidesurl: 
