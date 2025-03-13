@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2022-07-25-Lean-Neural-Networks-for-Real-time-Embedded-Spectral-Notching-Waveform-Design
 excerpt: ''
-date: 2022-07-25
+date: 2022-06-03
 venue: 'IEEE 31st International Symposium on Industrial Electronics'
 slidesurl: 
 paperurl: 'https://ieeexplore.ieee.org/document/9831772'
