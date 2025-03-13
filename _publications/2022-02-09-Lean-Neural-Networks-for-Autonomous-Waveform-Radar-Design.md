@@ -3,7 +3,7 @@ title: "Lean Neural Networks for Autonomous Radar Waveform Design"
 collection: publications
 category: manuscripts
 permalink: /publication/2022-02-09-Lean-Neural-Networks-for-Autonomous-Waveform-Radar-Design
-excerpt: 
+excerpt: ''
 date: 2022-02-09
 venue: 'Sensors'
 slidesurl: 
