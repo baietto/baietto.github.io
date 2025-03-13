@@ -7,7 +7,9 @@ excerpt: ''
 date: 2025-03-14
 venue: 'Neurocomputing'
 slidesurl: 
+slideslink: 
 paperurl: 'https://www.sciencedirect.com/science/article/abs/pii/S0925231224019787'
+paperlink: 
 citation: 'Baietto, A., Bihl, T. J., & Stewart, C. (2025). Dataset assembly for training Spiking Neural Networks. <i>Neurocomputing</i>, 622, 129207. https://doi.org/10.1016/j.neucom.2024.129207'
 ---
 

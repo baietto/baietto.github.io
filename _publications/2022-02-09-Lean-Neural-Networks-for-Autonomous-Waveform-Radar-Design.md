@@ -7,7 +7,9 @@ excerpt: ''
 date: 2022-02-09
 venue: 'Sensors'
 slidesurl: 
+slideslink: 
 paperurl: 'https://www.mdpi.com/1424-8220/22/4/1317'
+paperlink: 
 citation: 'Baietto, A., Boubin, J., Farr, P., Bihl, T. J., Jones, A. M., & Stewart, C. (2022). Lean Neural Networks for Autonomous Radar Waveform Design. <i>Sensors</i>, 22(4), 1317. https://doi.org/10.3390/s22041317'
 ---
 

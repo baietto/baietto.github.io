@@ -6,6 +6,7 @@ permalink: /publication/2024-11-11-SYSTEMS-AND-METHODS-FOR-TRAINING-NEURAL-NETWO
 excerpt: ''
 date: 2024-11-11
 patenturl: 
+patentlink: 
 patentnumber: 
 patentapplicationnumber: '63/718,921'
 ---

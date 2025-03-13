@@ -7,6 +7,7 @@ excerpt: ''
 date: 2025-01-09
 venue: '58th Hawaii International Conference on System Sciences'
 slidesurl: 
+slideslink: 
 paperurl: 'https://scholarspace.manoa.hawaii.edu/items/8a9fa3bd-d2a0-460b-9156-525ce0f2ddd5'
 citation: 'A. Baietto and T. J. Bihl, &quot;Generative Data for Neuromorphic Computing,&quot; in <i>58th Hawaii International Conference on System Sciences (HICSS)</i>, Big Island, HI, USA, 2025, pp. 7246-7255, https://hdl.handle.net/10125/109719.'
 ---

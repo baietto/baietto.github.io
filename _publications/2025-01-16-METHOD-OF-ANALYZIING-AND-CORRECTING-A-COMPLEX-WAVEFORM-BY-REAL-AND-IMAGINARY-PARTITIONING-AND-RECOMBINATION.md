@@ -6,6 +6,7 @@ permalink: /publication/2025-01-16-METHOD-OF-ANALYZIING-AND-CORRECTING-A-COMPLEX
 excerpt: ''
 date: 2025-01-16
 patenturl: 'https://ppubs.uspto.gov/dirsearch-public/print/downloadBasicPdf/20250020775?requestToken=eyJzdWIiOiJiM2M0YzhjNC1jOWQ1LTRjNjAtODhiNy0zZDJmMTE4YTI5ZTciLCJ2ZXIiOiJiMWY4NjJhNC00NzgxLTQ4NDYtODk0ZC00Mzc5ODE2NmY0OGIiLCJleHAiOjB9'
+patentlink: 
 patentnumber: 'US 2025/0020775 A1'
 patentapplicationnumber: '18/418,585'
 ---
