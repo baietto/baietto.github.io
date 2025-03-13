@@ -53,41 +53,41 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 		
-		{% if post.citation or post.patentnumber or post.patentapplicationnumber %}
+		{% if page.citation or page.patentnumber or page.patentapplicationnumber %}
 	      <p style="font-size: smaller">
 	  
-	      {% if post.citation %}
-	        Recommended citation: {{ post.citation }}
-	      {% elsif post.patentnumber %}
-	        Patent No.: {{ post.patentnumber }}
-	      {% elsif post.patentapplicationnumber %}
-	        Patent Application No.: {{ post.patentapplicationnumber }}
+	      {% if page.citation %}
+	        Recommended citation: {{ page.citation }}
+	      {% elsif page.patentnumber %}
+	        Patent No.: {{ page.patentnumber }}
+	      {% elsif page.patentapplicationnumber %}
+	        Patent Application No.: {{ page.patentapplicationnumber }}
 	      {% endif %}
 	  
-	      {% if post.paperurl or post.paperlink or post.slidesurl or post.slidesurl or post.patenturl or post.patentlink %}
+	      {% if page.paperurl or page.paperlink or page.slidesurl or page.slidesurl or page.patenturl or page.patentlink %}
 		    <br />
 	    
-		    {% if post.category == 'patents' %}
-	          {% if post.patentlink %}
-	            <a href="{{ post.patentlink | prepend: "/files/" | prepend: base_path }}">Download Patent</a>
-	          {% elsif post.patenturl %}
-	            <a href="{{ post.patenturl }}">Download Patent</a>
+		    {% if page.category == 'patents' %}
+	          {% if page.patentlink %}
+	            <a href="{{ page.patentlink | prepend: "/files/" | prepend: base_path }}">Download Patent</a>
+	          {% elsif page.patenturl %}
+	            <a href="{{ page.patenturl }}">Download Patent</a>
 	          {% endif %}
 	        {% else %}
-	          {% if post.paperlink %}
-	            <a href="{{ post.paperlink | prepend: "/files/" | prepend: base_path }}">Download Paper</a>
-	          {% elsif post.paperurl %}
-	            <a href="{{ post.paperurl }}">Download Paper</a>
+	          {% if page.paperlink %}
+	            <a href="{{ page.paperlink | prepend: "/files/" | prepend: base_path }}">Download Paper</a>
+	          {% elsif page.paperurl %}
+	            <a href="{{ page.paperurl }}">Download Paper</a>
 	          {% endif %}
 	  
-	          {% if post.paperlink or post.paperurl %}
+	          {% if (page.paperlink or page.paperurl) and (page.slideslink or page.slidesurl) %}
 	             | 
 	          {% endif %}
 	  
-	          {% if post.slideslink %}
-	            <a href="{{ post.slideslink | prepend: "/files/" | prepend: base_path }}">Download Slides</a>
-	          {% elsif post.slidesurl %}
-	            <a href="{{ post.slidesurl }}">Download Slides</a>
+	          {% if page.slideslink %}
+	            <a href="{{ page.slideslink | prepend: "/files/" | prepend: base_path }}">Download Slides</a>
+	          {% elsif page.slidesurl %}
+	            <a href="{{ page.slidesurl }}">Download Slides</a>
 	          {% endif %}
 	        {% endif %}
 	      {% endif %}
