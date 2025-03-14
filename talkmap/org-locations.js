@@ -1,22 +1,27 @@
 var addressPoints = [
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.5074456,
-    -0.1277653
+    "Generative Data for Neuromorphic Computing<br />58th Hawaii International Conference on System Sciences; Big Island, HI, USA",
+    19.58955475,
+    -155.44869830348483
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "Toward Robust Spiking Neural Networks<br />ACM International Conference on Neuromorphic Systems 2023; Santa Fe, NM, USA",
+    35.6876096,
+    -105.938456
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "Dataset Augmentation for Robust Spiking Neural Networks<br />IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion; Toronto, ON, Canada",
+    43.6534817,
+    -79.3839347
   ],
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7792588,
-    -122.4193286
+    "Lean Neural Networks for Real-time Embedded Spectral Notching Waveform Design<br />IEEE 31st International Symposium on Industrial Electronics; Anchorage, AK, USA",
+    61.2163129,
+    -149.894852
+  ],
+  [
+    "Data-Aware Tuning of Deep Learning Models<br />The Ohio State University; Columbus, OH, USA",
+    39.9622601,
+    -83.0007065
   ]
 ];
