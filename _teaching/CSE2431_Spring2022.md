@@ -1,5 +1,6 @@
 ---
 title: "CSE 2431 Systems II - Introduction to Operating Systems (Spring 2022)"
+excerpt: ""
 collection: teaching
 type: "Undergraduate Course"
 permalink: /teaching/CSE2431_Spring2022
