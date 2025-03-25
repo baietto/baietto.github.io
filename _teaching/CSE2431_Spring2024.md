@@ -1,10 +1,10 @@
 ---
 title: "CSE 2431 Systems II - Introduction to Operating Systems (Spring 2024)"
 collection: teaching
-type: ""
+type: "Undergraduate Course"
 permalink: /teaching/CSE2431_Spring2024
 venue: "The Ohio State University, Department of Computer Science and Engineering"
-date: 2022-01-10
+date: 2024-01-10
 location: "Columbus, OH, USA"
 ---
 
