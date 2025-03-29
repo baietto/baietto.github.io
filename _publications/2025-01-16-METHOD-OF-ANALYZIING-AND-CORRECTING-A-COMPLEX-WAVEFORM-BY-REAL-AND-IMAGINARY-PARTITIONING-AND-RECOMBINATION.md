@@ -5,8 +5,8 @@ category: patents
 permalink: /publication/2025-01-16-METHOD-OF-ANALYZIING-AND-CORRECTING-A-COMPLEX-WAVEFORM-BY-REAL-AND-IMAGINARY-PARTITIONING-AND-RECOMBINATION
 excerpt: ''
 date: 2025-01-16
-patenturl: 
-patentlink: '2025-01-16-METHOD-OF-ANALYZIING-AND-CORRECTING-A-COMPLEX-WAVEFORM-BY-REAL-AND-IMAGINARY-PARTITIONING-AND-RECOMBINATION.pdf'
+patenturl: 'https://patents.google.com/patent/US20250020775'
+patentlink: 
 patentnumber: 'US 2025/0020775 A1'
 patentapplicationnumber: '18/418,585'
 ---
