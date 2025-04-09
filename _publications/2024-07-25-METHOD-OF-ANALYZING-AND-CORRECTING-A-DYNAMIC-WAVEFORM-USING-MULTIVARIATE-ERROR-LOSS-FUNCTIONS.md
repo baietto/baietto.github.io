@@ -5,8 +5,8 @@ category: patents
 permalink: /publication/2024-07-25-METHOD-OF-ANALYZING-AND-CORRECTING-A-DYNAMIC-WAVEFORM-USING-MULTIVARIATE-ERROR-LOSS-FUNCTIONS
 excerpt: ''
 date: 2024-07-25
-patenturl: 
-patentlink: '2024-07-25-METHOD-OF-ANALYZING-AND-CORRECTING-A-DYNAMIC-WAVEFORM-USING-MULTIVARIATE-ERROR-LOSS-FUNCTIONS.pdf'
+patenturl: 'https://patents.google.com/patent/US20240249139'
+patentlink: 
 patentnumber: 'US 2024/0249139 A1'
 patentapplicationnumber: '18/418,576'
 ---
